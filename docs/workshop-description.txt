@@ -1,0 +1,74 @@
+[h1]5000 hp V8 + 10-speed Drag Transmission[/h1]
+
+A race package for the [b]Scania R (2016 / next generation)[/b]: a 5000 hp V8 and a close-ratio 10-speed with a torque converter, geared for standing starts and top-speed runs.
+
+Nothing stock is overwritten. Every factory engine and gearbox is still there - these are two extra options at the dealer and in the garage upgrade shop.
+
+This is deliberately unrealistic and does not pretend otherwise. What it is [i]not[/i] is arbitrary. A huge torque figure bolted to a haulage gearbox is actually slower than a well-matched 1000 hp build, because the box upshifts out of the power band on every change and the engine cannot rev. Both parts here are sized against each other.
+
+[h1]Engine - "16.4 L V8 5000 Drag (unofficial)"[/h1]
+[list]
+[*][b]5000 hp[/b] (3676 kW) at 3900 rpm
+[*][b]10 000 Nm[/b], flat from 1200 to 3000 rpm
+[*]Revs to [b]5200[/b] (5400 in neutral)
+[*]Never derates - no AdBlue consumption, no low-AdBlue power limit
+[*]250 000 EUR, level 26
+[/list]
+
+The rev limit is the part that actually matters. No factory Scania R 2016 engine sets a rev limit at all, so every one of them inherits a low default and simply cannot rev - which is why so many big-horsepower mods feel flat no matter how much torque they add. Lifting it is what makes a close-ratio ladder and a tall top gear work.
+
+[h1]Transmission - "10-speed Drag AMT 5000 (unofficial)"[/h1]
+[list]
+[*]10 close ratios, uniform 1.216 step, 4.20 down to 0.72
+[*][b]2.20 torque converter[/b] off the line
+[*][b]2.64 final drive[/b]
+[*][b]0.10 s shifts[/b] - the factory Opticruise takes 0.7 s
+[*]Top gear reaches 522 km/h at the limiter
+[*]5-stage front-loaded retarder
+[*]120 000 EUR, level 26
+[/list]
+
+Top gear deliberately overshoots what the truck can reach, so [b]aerodynamic drag sets the ceiling rather than the rev limiter[/b] - a build that bounces off the limiter in top has thrown away speed it could have had. Running bobtail, expect roughly [b]400 km/h[/b], with the engine landing just past peak power. That is close to optimal gearing.
+
+[h1]Read this or it will not work[/h1]
+
+[b]Turn off the truck speed limiter: Options -> Gameplay -> Truck speed limiter.[/b]
+
+Leave it on and you are capped at 90 km/h and none of the above happens. Worth turning off police and traffic too before a top-speed run.
+
+[h1]Two things that will surprise you[/h1]
+
+[b]Launch is traction-limited, not power-limited.[/b] First gear and the converter together demand roughly 481 kN, which is far past what the tyres will hold. A [b]6x4 chassis drives two axles and launches much better than a 6x2[/b], which drives only one. No engine fixes wheelspin.
+
+[b]Stopping is the real problem this mod creates.[/b] Kinetic energy at 400 km/h is about 22 times what it is at 90. The retarder is staged aggressively to help, but service brakes are defined on the chassis and are untouched by this mod. Leave far more room than instinct tells you to.
+
+Also honest: the factory V8 sound was never sampled anywhere near 5000 rpm. It holds up better than expected, but it is not a race sound.
+
+[h1]How to use it[/h1]
+[olist]
+[*]Subscribe, then enable the mod in Mod Manager from the profile screen
+[*]Truck Manager -> your Scania R 2016 -> Upgrade
+[*]Pick the engine on the Engine tab and the gearbox on the Transmission tab
+[/olist]
+
+[b]Before unsubscribing, switch the truck back to factory parts.[/b] If the mod disappears while these are still fitted, the game silently falls back to the 370 hp engine and the base gearbox.
+
+[h1]Compatibility[/h1]
+[list]
+[*]ETS2 1.60
+[*]Scania R 2016 (next generation) only
+[*]No DLC required
+[*]Adds parts and overwrites nothing, so it is safe alongside other mods
+[/list]
+
+[h1]Open source[/h1]
+
+MIT licensed, including the full engineering derivation. Every gear ratio, the torque curve and the top-speed estimate are published with the formulas that produced them, so you can retarget the package for a different power figure or a different top speed instead of guessing at numbers.
+
+[url=https://github.com/juliandepaepe/ets2-5000hp-v8-10speed-drag-r2016]github.com/juliandepaepe/ets2-5000hp-v8-10speed-drag-r2016[/url]
+
+Contains no files from Euro Truck Simulator 2.
+
+[h1]Disclaimer[/h1]
+
+Unofficial, fan-made modification. Not affiliated with, authorised by, or endorsed by SCS Software or Scania CV AB. "Scania" is a trademark of Scania CV AB and is used here only to state which vehicle these parts fit. The parts are fictional and represent no product either company makes.

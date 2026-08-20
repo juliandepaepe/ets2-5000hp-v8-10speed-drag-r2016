@@ -58,10 +58,14 @@ Nothing in the MIT licence grants any right to game content.
 
 Images
 ------
-src/mod_icon.jpg must be an image the publisher holds rights to. Screenshots
-taken in-game are the safe choice. Do not commit pictures found online: the
-rest of this package is carefully clean, and a borrowed photograph would be the
-one genuine infringement in it.
+src/mod_icon.jpg and the Steam Workshop preview image are illustrative only and
+are NOT covered by the MIT licence in LICENSE. They are not original work of
+this project's author, and this project therefore neither can nor does grant any
+rights in them.
+
+If you fork or redistribute this project, replace them with images you hold
+rights to. make-icon.ps1 regenerates both from any source picture in one
+command, and screenshots taken in-game are the safe choice.
 
 Not legal advice
 ----------------

@@ -150,7 +150,7 @@ your own in-game screenshots are the safe choice.
 
 ## Licence
 
-[MIT](LICENSE) for everything in this repository — all of it original work.
+[MIT](LICENSE) covers the definitions, scripts and documentation, all of which is original work. Images are NOT covered by the licence - see [NOTICE](NOTICE).
 
 Unofficial, fan-made, and containing no files from Euro Truck Simulator 2. Not
 affiliated with, authorised by, or endorsed by SCS Software s.r.o. or Scania CV
