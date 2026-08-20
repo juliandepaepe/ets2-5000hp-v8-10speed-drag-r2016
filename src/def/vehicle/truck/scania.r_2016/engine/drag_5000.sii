@@ -1,0 +1,67 @@
+SiiNunit
+{
+#
+#   Drag / top-speed V8 - 5000 PS. Deliberately unrealistic; this is a race
+#   part, not a haulage part. See docs/tuning.md for the full derivation.
+#
+#   Power check (the game derives power from the curve, not from info[]):
+#     max(curve_factor * rpm) = 0.90 * 3900 = 3510
+#     P = 10000 Nm * 3510 * 2*pi/60 = 3 675 672 W = 3675.7 kW = 4998 PS
+#
+#   Two things make this a race engine rather than just a big number:
+#
+#   1. rpm_limit. No factory Scania R 2016 engine sets this field at all, so
+#      they all inherit the low default and cannot rev. Setting it to 5200
+#      is what makes a close-ratio box and a 400 km/h top gear usable.
+#
+#   2. The rpm_range_* family tells the automated gearbox where to work. A
+#      huge torque figure with a haulage shift map still shifts up at 1400
+#      rpm and falls out of the power band on every change. These values
+#      keep it between 3000 and 4300 instead.
+#
+accessory_engine_data : drag_5000.scania.r_2016.engine
+{
+	name: "16.4 L V8 5000 Drag (unofficial)"
+	price: 250000
+	unlock: 26
+	info[]: "5@@dg@@000 @@hp@@ (3@@dg@@676@@kw@@)"
+	info[]: "10@@dg@@000 @@nm@@"
+	info[]: "1@@dg@@200-3@@dg@@000 @@rpm@@"
+	icon: "engine_scania_dc16"
+	part_type: factory
+
+	volume: 16.4
+	torque: 10000
+
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (500, 0.35)
+	torque_curve[]: (1200, 1.0)     # full torque this early is what launches it
+	torque_curve[]: (3000, 1.0)     # 1800 rpm wide plateau
+	torque_curve[]: (3400, 0.96)
+	torque_curve[]: (3900, 0.90)    # power peak, factor * rpm = 3510
+	torque_curve[]: (4300, 0.78)
+	torque_curve[]: (4800, 0.55)
+	torque_curve[]: (5200, 0.25)
+	torque_curve[]: (5400, 0.0)
+
+	rpm_idle: 900
+	rpm_limit: 5200
+	rpm_limit_neutral: 5400          # free-revs a little past the in-gear limit
+
+	# (downshift, upshift) windows the automated box is allowed to use.
+	rpm_range_low_gear: (2600, 4700)
+	rpm_range_high_gear: (3000, 4600)
+	rpm_range_power: (3000, 4300)    # the band it actively targets
+	rpm_range_engine_brake: (3600, 5200)
+
+	engine_brake: 3.0
+	engine_brake_downshift: 1
+	engine_brake_positions: 3
+
+	# A race engine should not derate mid-run: never consumes, never limited.
+	adblue_consumption: 0.0
+	no_adblue_power_limit: 1.0
+
+@include "sound_590s.sui"
+}
+}

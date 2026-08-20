@@ -1,0 +1,10 @@
+# Normalise to LF in the repository. The SII parser accepts either, and
+# PowerShell runs fine with LF, so keeping one form avoids noisy diffs
+# between contributors on different platforms.
+* text=auto eol=lf
+
+# Never let a game asset slip in as diffable text if one is ever force-added.
+*.scs binary
+*.pmd binary
+*.pmg binary
+*.dds binary

@@ -1,0 +1,69 @@
+NOTICE
+======
+
+Scope of the MIT licence
+------------------------
+The MIT licence in LICENSE covers the contents of this repository only: the
+two definition files under src/def/, the manifest and description, the build
+and image scripts, and the documentation. All of it is original work.
+
+No game content is included
+---------------------------
+This repository contains no files from Euro Truck Simulator 2. No models, no
+textures, no sounds, no audio banks, no packed archives, no extracted
+definition files.
+
+References are not copies
+-------------------------
+The definitions refer to resources by path so that the game resolves them from
+the user's own legally installed copy at load time:
+
+  @include "sound_590s.sui"          engine sound configuration
+  @include "sound.sui"               transmission sound configuration
+  icon: "engine_scania_dc16"         existing part icon
+  icon: "transmission_scania_grs"    existing part icon
+
+The file paths under src/def/vehicle/truck/scania.r_2016/ are likewise
+addresses the game requires in order to attach a part to that vehicle. None of
+the referenced data is reproduced here. Without an installed copy of the game
+this repository is inert.
+
+Numbers are derived, not transcribed
+------------------------------------
+The torque curve, the rev limits, the shift windows, the ten gear ratios, the
+final drive, the converter ratio and the retarder staging are all computed from
+the design targets stated in docs/tuning.md, which shows the formulas and the
+resulting values.
+
+The parts are fictional
+-----------------------
+No manufacturer builds a 5000 hp truck engine. These parts are invented for a
+game and are not representations, claims or specifications of any real product.
+Part names are deliberately generic and marked "unofficial" for that reason.
+
+Trademarks
+----------
+"Scania" is a trademark of Scania CV AB. "Euro Truck Simulator 2" and "SCS
+Software" are trademarks of SCS Software s.r.o. These names appear here only to
+identify the game and the vehicle these parts are compatible with, which is
+nominative use.
+
+This project is unofficial and fan-made. It is not affiliated with, authorised
+by, sponsored by, or endorsed by SCS Software s.r.o. or Scania CV AB.
+
+Requirements on users
+---------------------
+Using this mod requires a legally obtained copy of Euro Truck Simulator 2.
+Nothing in the MIT licence grants any right to game content.
+
+Images
+------
+src/mod_icon.jpg must be an image the publisher holds rights to. Screenshots
+taken in-game are the safe choice. Do not commit pictures found online: the
+rest of this package is carefully clean, and a borrowed photograph would be the
+one genuine infringement in it.
+
+Not legal advice
+----------------
+This file records the author's reasoning about why publishing this repository is
+appropriate. It is not legal advice and carries no warranty.

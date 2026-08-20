@@ -1,0 +1,27 @@
+SiiNunit
+{
+mod_package : .package_name
+{
+	package_version: "1.0.0"
+	author: "Redicat"
+
+	# Only categories the game recognises. "tuning_part" is not one of them
+	# and is logged as "Unknown category ... Ignoring."
+	category[]: "truck"
+
+	description_file: "mod_description.txt"
+
+	# Must be a .jpg of exactly 276x162 or the Mod Manager shows no image.
+	# Regenerate with make-icon.ps1.
+	icon: "mod_icon.jpg"
+
+	# Lines tagged #!standalone below, and the tag comments themselves, are
+	# stripped by build.ps1 -Workshop. The Workshop validator rejects both
+	# fields: it takes the name from the Steam item and versions from
+	# versions.sii. They are still required for the standalone .scs.
+	#!standalone
+	display_name: "5000 hp Dragster V8 + 10-speed for R 2016 (unofficial)"
+	#!standalone
+	compatible_versions[]: "1.60.*"
+}
+}

@@ -1,0 +1,42 @@
+5000 hp Dragster V8 + 10-speed for R 2016 (unofficial)
+=======================================================
+
+A race package for the Scania R (2016 / next generation): a 5000 hp V8 and a
+close-ratio 10-speed with a torque converter, geared for standing-start runs
+and for top speed. Nothing stock is overwritten - every factory engine and
+gearbox is still selectable.
+
+This is deliberately unrealistic. If you want a fast truck that still behaves
+like a truck, use the haulage package instead; this one does not pretend.
+
+ENGINE - "16.4 L V8 5000 Drag (unofficial)"
+  5000 hp (3676 kW) at 3900 rpm, 10 000 Nm from 1200 to 3000 rpm.
+  Revs to 5200. No factory Scania engine sets a rev limit at all, so they all
+  inherit a low default and simply cannot rev - lifting that is what makes the
+  whole package work.
+  Never derates: no AdBlue consumption and no low-AdBlue power limit.
+
+TRANSMISSION - "10-speed Drag AMT 5000 (unofficial)"
+  10 close ratios, uniform 1.216 step, 4.20 down to 0.72.
+  2.20 torque converter, 2.64 final drive, 0.10 s shifts.
+  Top gear reaches 522 km/h at the limiter, so drag and not gearing sets the
+  ceiling - roughly 400 km/h running bobtail.
+  5-stage front-loaded retarder, because stopping is the actual problem.
+
+BEFORE IT WILL DO ANY OF THIS
+  Turn off the truck speed limiter: Options -> Gameplay -> Truck speed limiter.
+  Otherwise you are capped at 90 km/h and none of the above happens.
+  Consider also turning off police and traffic before a top-speed run.
+
+NOTES
+  Traction is the limit off the line, not power. A 6x4 chassis launches far
+  better than the 6x2, which drives only one axle.
+  The engine uses the factory V8 sound, which was never sampled near 5000 rpm.
+  It holds up better than expected but it is not a race sound.
+
+--
+This is an unofficial, fan-made modification. It contains no files from
+Euro Truck Simulator 2 and is not affiliated with, authorised by, or endorsed
+by SCS Software or Scania CV AB. "Scania" is a trademark of Scania CV AB and
+is used here only to state which vehicle the parts fit. The parts are
+fictional and represent no product either company makes.

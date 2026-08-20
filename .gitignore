@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------------------
+# CRITICAL: never commit game files.
+#
+# Building this mod does not require any game asset in the repository, and
+# unpacked Euro Truck Simulator 2 archives are SCS Software's copyrighted
+# material. Extracting them locally to read is fine; publishing them is not.
+# Keep extracted archives OUTSIDE this directory entirely - that is the only
+# reliable guarantee, since a rule here cannot protect you from `git add -f`.
+# ---------------------------------------------------------------------------
+extracted/
+extract/
+unpacked/
+base/
+def_dump/
+*.scs
+*.pmd
+*.pmg
+*.pmc
+*.tobj
+*.dds
+*.mask
+*.bank
+*.soundref
+
+# Build output
+dist/
+build/
+
+# Editor / OS noise
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+*.bak
+*~
